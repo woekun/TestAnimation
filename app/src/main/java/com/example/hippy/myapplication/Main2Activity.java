@@ -41,7 +41,7 @@ public class Main2Activity extends Activity{
         linearLayout.setVisibility(View.INVISIBLE);
         windowTransition();
 
-        revealEditText(linearLayout);
+        revealAnimation(linearLayout);
     }
 
     private void windowTransition() {
@@ -54,7 +54,7 @@ public class Main2Activity extends Activity{
         });
     }
 
-    private void revealEditText(final LinearLayout view) {
+    private void revealAnimation(final LinearLayout view) {
         view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
